@@ -58,7 +58,6 @@ class FileManager:
             if f["ttl"]:
               if f["ttl"] + f["timestamp"] < timestamp:
                   size = None
-            
         
         return size
     
@@ -149,4 +148,5 @@ assert len(test.files) == 10
 
 test.ROLLBACK(100)
 assert len(test.files) == 9
-print(len(test.files))
+
+print("Success")
